@@ -1,0 +1,104 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1>Follow the steps</h1>
+
+<hr>
+
+<h2>Answer</h2>
+<div style="border: 1px dotted #000;height: 100px;">
+<h3 id="solution" style="visibility: hidden;">
+⬆️➡️➡️➡️➡️⬇️⬇️⬇️⬅️⬅️⬅️⬅️⬆️➡️⬅️⬆️⬆️
+</h3>
+<button onclick="toggleSolution()">On/Off Answer</button>
+</div>
+<hr>
+<h2>Chosen Steps</h2>
+<div style="border: 1px dotted #000;height: 100px;">
+<h3 id="logger">
+</h3>
+    </div>
+<h1>
+	 Score: <span id="score"></span>
+</h1>
+<h1>
+	 Steps Remaining: <span id="remain_steps"></span>
+</h1>
+	
+<button onclick="process('⬆️')">Up</button>
+<button onclick="process('⬇️')">Down</button>
+<button onclick="process('➡️')">Right</button>
+<button onclick="process('⬅️')">Left</button>
+<hr>
+<button onclick="reset()">Reset game</button>
+<script>
+	  const gameData = [
+	  {direction: "⬆️"},
+	  {direction: "➡️"},
+	  {direction: "➡️"},
+	  {direction: "➡️"},
+	  {direction: "➡️"},
+	  {direction: "⬇️"},
+	  {direction: "⬇️"},
+	  {direction: "⬇️"},
+	  {direction: "⬅️"},
+	  {direction: "⬅️"},
+	  {direction: "⬅️"},
+	  {direction: "⬅️"},
+	  {direction: "⬆️"},
+	  {direction: "➡️"},
+	  {direction: "⬅️"},
+	  {direction: "⬆️"},
+	  {direction: "⬆️"},
+	  
+	  ];
+	  const max_steps = 17;
+	  var remain_steps = max_steps;
+	  var playable = true;
+	  var count = 0;
+	  var score = 0;
+	  var show = false;
+	  document.getElementById("remain_steps").innerHTML = remain_steps;
+	  document.getElementById("score").innerHTML = score;
+	  function process(direction) {
+	  	if (playable) {
+	  		const data = gameData[count];
+	  		remain_steps--;
+	  		count++;
+	  		if (direction === data.direction) score++;
+	  		document.getElementById("remain_steps").innerHTML = remain_steps;
+	  		document.getElementById("score").innerHTML = score;
+	  		document.getElementById("logger").append(direction);
+	  		if (remain_steps == 0) {
+	  	        playable = false;
+	  	        document.getElementById("remain_steps").innerHTML = "DONE";
+	  	        show = false;
+	  	        toggleSolution();
+	  		} 
+	  	}
+	  }
+	  
+	  function reset() {
+	  	remain_steps = max_steps;
+	  	score = 0;
+	  	count = 0;
+	  	playable = true;
+	  	show = false;
+	  	document.getElementById("remain_steps").innerHTML = remain_steps;
+	  	document.getElementById("score").innerHTML  = "";
+	  	document.getElementById("logger").innerHTML = "";
+	  }
+	  
+	  function toggleSolution() {
+	  	show = !show;
+	  	console.log(show);
+	  	if (show)
+	  		document.getElementById("solution").style.visibility = "visible";
+	  	else 
+	  		document.getElementById("solution").style.visibility = "hidden";
+	  }
+</script>
+</body>
+</html>

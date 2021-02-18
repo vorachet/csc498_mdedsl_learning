@@ -1,0 +1,28 @@
+grammar csc498.Dsl1 with org.eclipse.xtext.common.Terminals
+
+generate dsl1 "http://www.Dsl1.csc498"
+
+Model:
+	contacts+=Contact*
+	rsvps+=RSVP*
+	emails+=Email*
+;
+	
+Contact:
+	'Contact' name=ID 'email' email=STRING
+;
+
+RSVP:
+	'RSVP' name=ID
+	'message' message=STRING
+;
+
+Email:
+	'Email' name=ID
+	'to' '{' contacts+=[Contact]+ '}'
+	'message' message=STRING
+;
+
+		
+
+	

@@ -1,0 +1,36 @@
+grammar csc498.Dsl3 with org.eclipse.xtext.common.Terminals
+
+generate dsl3 "http://www.Dsl3.csc498"
+
+Statemachine :
+	{Statemachine}
+	('events'
+		events+=Event+
+	'end')?
+	('resetEvents'
+		resetEvents+=[Event]+
+	'end')?
+	('commands'
+		commands+=Command+
+	'end')?
+	states+=State*
+;
+
+Event:
+	name=ID
+;
+
+Command:
+	name=ID
+;
+
+State:
+	'state' name=ID
+		('entry_commands' '{' actions+=[Command]+ '}')?
+		transitions+=Transition*
+	'end'
+;
+
+Transition:
+	event=[Event] '=>' state=[State]
+;

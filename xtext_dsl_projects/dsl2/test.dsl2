@@ -1,0 +1,26 @@
+Game SimpleGame {  
+    down(1)       
+    up(1)            
+    right(1)                          
+    left(1)     
+}   
+
+Game StandardGame {  
+    right(2)    
+    down(1)       
+    up(2)            
+    right(1)                          
+    left(3)     
+}   
+
+Game ComplicatedGame {  
+    up(1) 
+    right(4)
+    down(3)   
+    left(4)     
+    up(1)            
+    right(1)                          
+    left(1)     
+    up(2)  
+}   
+                       

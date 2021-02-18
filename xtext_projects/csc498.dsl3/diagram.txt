@@ -1,0 +1,30 @@
+@startuml
+skinparam linetype polyline
+
+[*] -> OFF
+OFF: notifyMachineOff()
+OFF: clearMachineStates()
+OFF --> READY : on
+
+READY: notifyMachineOn()
+READY: prepareResourcesForTask1()
+
+READY --> TASK1_PERFORMED : task1
+READY --> OFF : off
+
+TASK1_PERFORMED: processTask1()
+TASK1_PERFORMED: prepareResourcesForTask2()
+TASK1_PERFORMED --> TASK2_PERFORMED : task2
+TASK1_PERFORMED --> READY: reset
+TASK1_PERFORMED --> OFF: off
+
+TASK2_PERFORMED: processTask2()
+TASK2_PERFORMED: prepareResourcesForTask3()
+TASK2_PERFORMED --> TASK3_PERFORMED : task3
+TASK2_PERFORMED --> READY: reset
+TASK2_PERFORMED --> OFF: off
+
+TASK3_PERFORMED: processTask3()
+TASK3_PERFORMED --> READY: reset
+TASK3_PERFORMED --> OFF: off
+@enduml

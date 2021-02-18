@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+	<extension point="org.eclipse.emf.ecore.generated_package">
+		<package
+			uri = "http://www.Dsl3.csc498"
+			class = "csc498.dsl3.Dsl3Package"
+			genModel = "model/generated/Dsl3.genmodel" />
+	</extension>
+</plugin>

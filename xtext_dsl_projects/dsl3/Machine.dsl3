@@ -1,0 +1,51 @@
+events
+  on 
+  off 
+  task1
+  task2
+  task3
+  reset
+end
+
+commands
+  clearMachineStates
+  notifyMachineOn
+  notifyMachineOff
+  prepareResourcesForTask1
+  prepareResourcesForTask2
+  prepareResourcesForTask3
+  processTask1
+  processTask2
+  processTask3 
+end
+
+state OFF
+  entry_commands {notifyMachineOff clearMachineStates}
+  on => READY
+end
+
+state READY
+  entry_commands {notifyMachineOn prepareResourcesForTask1}   
+  task1 => TASK1_PERFORMED
+  off => OFF
+end
+
+state TASK1_PERFORMED
+  entry_commands {processTask1 prepareResourcesForTask2}   
+  task2 => TASK2_PERFORMED
+  reset => READY
+  off => OFF
+end
+
+state TASK2_PERFORMED
+  entry_commands {processTask2 prepareResourcesForTask3}  
+  task3 => TASK3_PERFORMED
+  reset => READY
+  off => OFF
+end
+
+state TASK3_PERFORMED
+  entry_commands {processTask3}  
+  reset => READY
+  off => OFF
+end

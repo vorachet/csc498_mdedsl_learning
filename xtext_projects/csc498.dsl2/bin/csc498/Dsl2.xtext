@@ -1,0 +1,39 @@
+grammar csc498.Dsl2 with org.eclipse.xtext.common.Terminals
+
+generate dsl2 "http://www.Dsl2.csc498"
+
+Model:
+	games+=Game*
+	;
+
+Game: 
+  'Game' name=ID '{'
+     commands+=Command*
+  '}'
+  ;
+
+Command: Up | Down | Right | Left ;
+
+Up:
+	'up' '(' value=INT')' 
+;
+
+Down:
+	'down' '(' value=INT')' 
+;
+
+Right:
+	'right' '(' value=INT')' 
+;
+
+Left:
+	'left' '(' value=INT')' 
+;
+
+	
+// ID is a terminal represented by '^'?('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9')*;
+// STRING is a terminal represented by
+//                 '"' ( '\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|'"') )* '"' |
+//                 "'" ( '\\' ('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|"'") )* "'";
+// name is an identifier
+// ()? is an alternative
