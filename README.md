@@ -1,8 +1,6 @@
-# csc498_mdedsl_learning
+# MDE/DSL learning material for CS students at SIT KMUTT
 
-Simplified DSL demo using Xtext
-
-# Projects
+# XText Projects
 
 ## DSL1 Document generation
 
