@@ -2,8 +2,8 @@
 
 This repo gives learning material in practicing several open-source MDE/DSL tools and hopefully motivates CS students at SIT to understand why model-driven engineering is important and able to perform the following basic MDE/DSL tasks.
 
-* Design a textual DSL and code generator using Xtext (Workshop Done - 19 FEB 2021)
-* Modeling tasks (upon request workshop/tutorial)
+* Design a textual DSL and code generator using Xtext (Workshop Done - 18 FEB 2021)
+* Modeling tasks (This workshop is upon request)
   * Design metamodel using EMF ECore/Emfactic language
   * Create models based on EMF ECore using Flexmi
   * Create EMF/UML models using Eclipse Papyrus 
