@@ -1,11 +1,9 @@
 # MDE/DSL learning material for CS@SIT
 
-# MDE with UML/SYSML (Epsilon)
-
-TBD
+# MDE with UML/SYSML using Eclipse Epsilon
+TBD 
 
 # XML-based DSL using Emfactic + Flexmi
-
 TBD
 
 # Textual DSL using XText
@@ -241,4 +239,6 @@ end
 
 ```
 
+# Study Resources 
 
+- https://docs.google.com/document/d/1CvOFIsub_26_H473K7LRy_7BZ9GfPIcib58TiFXYUK0/edit?usp=sharing
