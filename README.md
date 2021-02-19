@@ -1,4 +1,4 @@
-# MDE/DSL learning material for CS students at SIT KMUTT
+# MDE/DSL learning material for CS@SIT
 
 # XText Projects
 
@@ -44,14 +44,7 @@ Contact fullname4 email "fullname4@org.com"
 RSVP Wedding   
     message    
 "
-We are so excited for our upcoming wedding on 18 FEB 2021!
-We can’t wait to see all our friends and family and share our joy and happiness.
-
-We wanted to remind you that you have the option of RSVPing online, as well as mailing the card to us. 
-For information, or to answer any questions you may have, feel free to call us, or visit our website.
-
-See you in 6 weeks!
- 
+RSVP MESSAGE
 CS@SIT
 "
     
@@ -59,14 +52,7 @@ Email OnboardingNewTeamMember
     to { fullname1 fullname2 } 
     message 
 "
-Thanks for joining our group.
-
-Over the next few weeks, you can expect a few more emails from us. 
-
-We’ll also share our tips and tricks on how we use our services.
-
-Thanks!
-
+EMAIL TEMPLATE
 CS@SIT
 "
 ```
