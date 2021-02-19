@@ -239,6 +239,10 @@ end
 
 ```
 
-# Study Resources 
+# Self-study resources 
 
-- https://docs.google.com/document/d/1CvOFIsub_26_H473K7LRy_7BZ9GfPIcib58TiFXYUK0/edit?usp=sharing
+## MDE
+- MDE, A lecture note from Prof. Dimitris Kolovos’s public lectures https://docs.google.com/document/d/1CvOFIsub_26_H473K7LRy_7BZ9GfPIcib58TiFXYUK0/edit?usp=sharing
+
+## DSL 
+- DSL Engineering Designing, Implementing and Using Domain-Specific Languages, Markus Voelter http://voelter.de/data/books/markusvoelter-dslengineering-1.0.pdf
