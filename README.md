@@ -1,6 +1,6 @@
 # MDE/DSL learning material for CS@SIT
 
-This repo gives project examples in practicing several open-source MDE/DSL tools and hopefully motivates CS students at SIT to understand why model-driven engineering is important and able to perform the following basic MDE/DSL tasks.
+This repo gives learning material in practicing several open-source MDE/DSL tools and hopefully motivates CS students at SIT to understand why model-driven engineering is important and able to perform the following basic MDE/DSL tasks.
 
 * Design a textual DSL and code generator using Xtext (Workshop Done - 19 FEB 2021)
 * Modeling tasks (upon request workshop/tutorial)
