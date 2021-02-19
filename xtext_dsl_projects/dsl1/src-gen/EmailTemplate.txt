@@ -1,0 +1,8 @@
+Dear 
+
+fullname1 <fullname1@org.com>
+fullname2 <fullname2@org.com>
+
+
+EMAIL TEMPLATE
+CS@SIT
