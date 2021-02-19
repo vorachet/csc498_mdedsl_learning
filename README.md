@@ -6,8 +6,8 @@ This repo gives project examples in practicing several open-source MDE/DSL tools
 * Modeling tasks (upon request workshop/tutorial)
   * Design metamodel using EMF ECore/Emfactic language
   * Create models based on EMF ECore using Flexmi
-  * Create EMF/UML/SysML models using Eclipse Papyrus 
-  * Access EMG/UML/SysML models using Eclipse Epsilon 
+  * Create EMF/UML models using Eclipse Papyrus 
+  * Access EMF/UML models using Eclipse Epsilon 
   * Model transformation using Eclipse Epsilon
   * Model validation using Eclipse Epsilon
 
