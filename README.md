@@ -1,8 +1,25 @@
 # MDE/DSL learning material for CS@SIT
 
-# XText Projects
+# MDE with UML/SYSML (Epsilon)
 
-## DSL1 Document generation
+TBD
+
+# XML-based DSL using Emfactic + Flexmi
+
+TBD
+
+# Textual DSL using XText
+
+## Installing Eclipse XText plugin
+
+https://www.eclipse.org/Xtext/download.html
+
+## Resources
+
+- Official XText documentation https://www.eclipse.org/Xtext/documentation/index.html
+- XTend documentation https://www.eclipse.org/xtend/documentation/
+
+### DSL1 Document generation
 
 Abstract Syntax
 
@@ -58,7 +75,7 @@ CS@SIT
 ```
 
 
-## DSL2 Web-based game - Follow the steps
+### DSL2 Web-based game - Follow the steps
 
 Abtract Syntax
 
@@ -127,7 +144,7 @@ Game ComplicatedGame {
                        
 ```
 
-## DSL3 Application of Statemachine 
+### DSL3 Application of Statemachine 
 
 ```
 grammar csc498.Dsl3 with org.eclipse.xtext.common.Terminals
@@ -224,12 +241,4 @@ end
 
 ```
 
-## Installing Eclipse XText plugin
-
-https://www.eclipse.org/Xtext/download.html
-
-## Resources
-
-- Official XText documentation https://www.eclipse.org/Xtext/documentation/index.html
-- XTend documentation https://www.eclipse.org/xtend/documentation/
 
