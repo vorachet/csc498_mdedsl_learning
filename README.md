@@ -1,18 +1,45 @@
 # MDE/DSL learning material for CS@SIT
 
-This repo gives project examples in practicing several open-source MDE/DSL tools and hopefully motivates CS students at SIT to understand why model-driven engineering is important and can perform basic MDE/DSL tasks.
+This repo gives project examples in practicing several open-source MDE/DSL tools and hopefully motivates CS students at SIT to understand why model-driven engineering is important and able to perform the following basic MDE/DSL tasks.
+
+* Design a textual DSL and code generator using Xtext (Workshop Done - 19 FEB 2021)
+* Modeling tasks (upon request workshop/tutorial)
+  * Design metamodel using EMF ECore/Emfactic language
+  * Create models based on EMF ECore using Flexmi
+  * Create EMF/UML/SysML models using Eclipse Papyrus 
+  * Access EMG/UML/SysML models using Eclipse Epsilon 
+  * Model transformation using Eclipse Epsilon
+  * Model validation using Eclipse Epsilon
 
 # Textual DSL using XText
 
-## Installing Eclipse XText plugin
-
-https://www.eclipse.org/Xtext/download.html
-
 ## Resources
-
+- Installing Eclipse XText plugin https://www.eclipse.org/Xtext/download.html
 - Official XText documentation https://www.eclipse.org/Xtext/documentation/index.html
 - XTend documentation https://www.eclipse.org/xtend/documentation/
 
+## Workshop material   
+
+```
+├── xtext_dsl_projects (DSL projects created by [1])
+│   ├── dsl1
+│   ├── dsl2
+│   └── dsl3
+└── xtext_projects.  (Xtext projects [1])
+    ├── aspect1.png
+    ├── csc498.dsl1
+    ├── csc498.dsl1.ide
+    ├── csc498.dsl1.ui
+    ├── csc498.dsl2
+    ├── csc498.dsl2.ide
+    ├── csc498.dsl2.ui
+    ├── csc498.dsl3
+    ├── csc498.dsl3.ide
+    ├── csc498.dsl3.tests
+    ├── csc498.dsl3.ui
+    ├── csc498.dsl3.ui.tests
+    └── csc498.readme
+```
 ### DSL1 Document generation
 
 Abstract Syntax
@@ -234,14 +261,3 @@ state TASK3_PERFORMED
 end
 
 ```
-
-# MDE with UML/SYSML using Eclipse Epsilon
-TBD 
-
-# XML-based DSL using Emfactic + Flexmi
-TBD
-
-# Self-study resources 
-
-- MDE, A lecture note from Prof. Dimitris Kolovos’s lectures https://docs.google.com/document/d/1CvOFIsub_26_H473K7LRy_7BZ9GfPIcib58TiFXYUK0/edit?usp=sharing
-- DSL Engineering Designing, Implementing and Using Domain-Specific Languages, Markus Voelter http://voelter.de/data/books/markusvoelter-dslengineering-1.0.pdf
